@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Speed Test </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        </head>
+        <style>
+            body {
+                background-color:lightblue;
+                text-align:center;
+            }
+            h1 {
+                background-color:lightgreen;
+                padding:20px;
+            }
+            </style>
+        <body>
+            <div class="container p-3 my-3 bg-dark text-white">
+            <h1 align="center"> Speed Test Game </h1>
+            <h3 align="center">Select the level of your game </h3> 
+            
+            <select id="level" onchange="actionOnSubmit()">
+                <option value="15">Easy</option>
+                <option value="10">Medium</option>
+                <option value="7">Hard</option>
+            
+                </select>
+            
+                    </div>
+                <p id="demo"></p>
+            <div class="container p-3 my-3 bg-primary text-white">
+            <h2  id="currentWord"> Let's start the game </h2>
+            <input type="text" placeholder="Type the text" id="writtenWord" autofocus/>
+            <h4 id="message"> </h4>
+            <h3> Time Left: <span id="Time"> 0 </span> </h3>
+            <h3> Score: <span id="score"> 0</span> </h3>
+            <p align="center"> <h3> INSTRUCTIONS </h3> <br> Type the word in the specified time limit to score in this interesting game </p>
+            </div>
+            <script src="speed.js"> </script>
+            </body>
+    </html>
